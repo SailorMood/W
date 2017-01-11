@@ -3,6 +3,7 @@
 	$w_routes = array(
 		['GET', '/', 'Default#home', 'default_home'],
         ['GET', '/articles/', 'ArticlesController#afficher', 'articles'],
-        ['GET', '/users/', 'UsersController#afficher', 'users'],
-        ['GET', '/users/', 'UsersController#inscription', 'inscription'],
+        ['GET|POST', '/users/', 'UsersController#afficher', 'users'],
+        ['GET', '/users/insciption/', 'UsersController#inscriptionf', 'insciption'],
+        ['GET', '/users/connexion/', 'UsersController#connexionf', 'connexion'],
 	);

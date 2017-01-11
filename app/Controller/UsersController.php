@@ -11,8 +11,12 @@ class UsersController extends Controller
     {
         $this -> show('users/home');
     }
-    public function inscription()
+    public function inscriptionf()
     {
-        $this -> show('users/inscription');
+        $this -> show('users/insciption');
+    }
+    public function connexionf()
+    {
+        $this -> show('users/connexion');
     }
 }

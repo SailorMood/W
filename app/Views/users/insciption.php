@@ -2,10 +2,13 @@
 
 <?php $this->start('main_content') ?>
 
-<form action="inscription.php" method="post">
+<form action="insciption/" method="post">
         <label>Nom <input type="text" name="nom" value=""></label><br>
         <label>Prenom <input type="text" name="prenom" value=""></label><br>
         <label>Email <input type="mail" name="email" value=""></label><br>
+        <label>Pseudo <input type="text" name="pseudo" value=""></label><br>
+        <label>Password </label><input type="password" name="pass"><br>
+        <input type="submit" name="sub">
     </form>
 
 <?php $this->stop('main_content') ?>
