@@ -2,6 +2,11 @@
 
 <?php $this->start('main_content') ?>
 
+<?php
+use \W\Model\LoginModel;
+LoginModel::getDbh();
+?>
+
 <form action="index.php" method="post">
 
         <label>Email <input type="mail" name="email" value=""></label><br>

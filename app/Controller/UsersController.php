@@ -14,7 +14,7 @@ class UsersController extends Controller
     }
     public function inscriptionf()
     {
-        $this -> show('users/insciption');
+        $this -> show('users/inscription');
     }
     public function connexionf()
     {

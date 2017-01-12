@@ -4,7 +4,7 @@
 
 <?php
     use \W\Model\ConnectionModel;
-    ConnectionModel::getDbh();
+   $instance = ConnectionModel::getDbh();
 ?>
 
 <form action="index.php" method="post">
