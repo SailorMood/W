@@ -3,6 +3,7 @@
 namespace Controller;
 
 use \W\Controller\Controller;
+use \Model\LoginModel;
 
 
 class UsersController extends Controller
@@ -18,5 +19,7 @@ class UsersController extends Controller
     public function connexionf()
     {
         $this -> show('users/connexion');
+        $tintin = new LoginModel("toto@gmail.com");
+        var_dump($tintin);
     }
 }
