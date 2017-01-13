@@ -9,7 +9,7 @@
         ['GET|POST', '/articles/modifier/', 'ArticlesController#modifierf', 'articles_modifier'],
 
         //Utilisateurs
-        ['POST', '/users/', 'UsersController#afficher', 'users'],
-        ['POST', '/users/inscription/', 'UsersController#inscriptionf', 'insciption'],
-        ['POST', '/users/connexion/', 'UsersController#connexionf', 'connexion'],
+        ['GET', '/users/', 'UsersController#afficher', 'users'],
+        ['GET|POST', '/users/insciption/', 'UsersController#inscriptionf', 'inscription'],
+        ['GET|POST', '/users/connexion/', 'UsersController#connexionf', 'connexion']
 	);

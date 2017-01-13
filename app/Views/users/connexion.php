@@ -2,10 +2,6 @@
 
 <?php $this->start('main_content') ?>
 
-<?php
-    use \W\Model\ConnectionModel;
-   $instance = ConnectionModel::getDbh();
-?>
 
 <form action="index.php" method="post">
     <label>Pseudo <input type="text" name="username" value=""></label><br>
