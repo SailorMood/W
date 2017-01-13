@@ -3,7 +3,7 @@
 <?php $this->start('main_content') ?>
 
 
-<form action="index.php" method="post">
+<form method="post">
 
         <label>Email <input type="email" name="email" value=""></label><br>
         <label>Pseudo <input type="text" name="username" value=""></label><br>

@@ -25,6 +25,7 @@ class UsersController extends Controller
             );
             $insertUser = new insertUserModel();
             $insertion = $insertUser -> insertUser($newUser);
+
         }
 
         $this -> show('users/insciption');
