@@ -18,10 +18,11 @@ class UsersController extends Controller
     public function inscriptionf()
     {
         if(isset($_POST['inscription'])){
+            $cryptedPassword = password_hash($_POST['password'], PASSWORD_DEFAULT);
             $newUser = array(
                 "username" => $_POST['username'],
                 "email" => $_POST['email'],
-                "password" => $_POST['password']
+                "password" => $cryptedPassword
             );
             $insertUser = new insertUserModel();
             $insertion = $insertUser -> insertUser($newUser);
@@ -35,6 +36,13 @@ class UsersController extends Controller
         if(isset($_POST['connexion'])){
             $authUser = new AuthentificationModel();
             $userID = $authUser -> isValidLoginInfo($_POST['email'], $_POST['password']);
+            $user = array(
+                'email' => $_POST['email'],
+                'password' => $_POST['password']
+            );
+            var_dump($user);
+            var_dump($authUser);
+            $connectUser = $authUser -> logUserIn($user);
             var_dump($userID);
         }
 
